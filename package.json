@@ -6,9 +6,9 @@
     "license": "PRIVATE",
     "scripts": {
         "build-ts": "tsc",
-        "build": "npm run build-ts && npm run lint",
+        "build": "npm run lint && npm run build-ts",
         "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
-        "serve": "node dist/server.js",
+        "serve": "node dist/src/server.js",
         "start": "npm run serve",
         "test": "jest --forceExit --coverage --verbose",
         "watch-test": "npm run test -- --watchAll",
