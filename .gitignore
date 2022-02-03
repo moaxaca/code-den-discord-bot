@@ -34,5 +34,9 @@ bower_components
 .DS_Store
 Thumbs.db
 
+*.sqlite
+
 # Ignore built ts files
 dist/**/*
+.ignore/**/*
+!.ignore/.keep
